@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frontier Brief — August 2026</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="mark" href="#top"><i class="mark-dot"></i> Frontier Brief</a>
+      <nav class="nav">
+        <a href="#share">Share</a>
+        <a href="#capital">Capital</a>
+        <a href="#users">Users</a>
+        <a href="#models">Models</a>
+        <a href="#compare">Compare</a>
+        <a href="#signup">Updates</a>
+      </nav>
+      <div class="asof">As of 13 Aug 2026 · Local only</div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="kicker">A private briefing · compiled 13 August 2026</div>
+      <h1>The frontier, <em>as it stands</em> this week.</h1>
+      <p class="lede">
+        Capability at the top of the market has converged. Distribution has not.
+        ChatGPT still takes more than half of standalone chatbot web traffic, Gemini
+        is the only other consumer-scale assistant, and Claude now leads on coding
+        and enterprise revenue even with a much smaller public audience. This page
+        compares the latest flagship models, who uses them, and how much capital
+        sits behind each lab.
+      </p>
+    </section>
+
+    <div class="wrap stats">
+      <div class="stat"><b>11</b><span>Frontier labs and surfaces in this briefing</span></div>
+      <div class="stat"><b>53.9%</b><span>ChatGPT share of measured chatbot web visits</span></div>
+      <div class="stat"><b>$965B</b><span>Anthropic private valuation, now the highest of the pure labs</span></div>
+      <div class="stat"><b>1B+</b><span>Monthly users each for ChatGPT and Gemini</span></div>
+    </div>
+
+    <section class="section wrap" id="share">
+      <div class="section-head">
+        <div>
+          <h2>Who people actually open</h2>
+          <p class="sub">Worldwide web-visit share among the seven largest standalone generative assistants, May 2026. Combined traffic that month: 10.4 billion visits. This is the cleanest public ranking of destination chat products — it undercounts apps, APIs, and assistants buried inside Search, Windows, or Instagram.</p>
+        </div>
+        <p class="note">Source: Similarweb via Momentic, May 2026 complete month. Shares are of this seven-assistant set, not of all AI usage on Earth.</p>
+      </div>
+      <div class="split">
+        <div class="chart-card">
+          <div class="pie-wrap">
+            <div class="pie">
+              <svg id="pie" viewBox="0 0 280 280" role="img" aria-label="Chatbot web-visit market share pie chart"></svg>
+              <div class="pie-center">
+                <strong id="pie-value">53.9%</strong>
+                <span id="pie-label">ChatGPT leads</span>
+              </div>
+            </div>
+            <div class="legend" id="legend"></div>
+          </div>
+        </div>
+        <div>
+          <p class="take"><strong>Two companies hold 82% of measured visits.</strong> ChatGPT is still larger than the other six combined, but its share has slid from about 79% a year earlier while its visit count stayed roughly flat. The market grew around it.</p>
+          <p class="take"><strong>Gemini is the only real consumer challenger.</strong> 27.9% worldwide, up from the mid-single digits in early 2025, helped by Android, Search, and Workspace. Google said the Gemini app itself crossed 1 billion monthly users this month.</p>
+          <p class="take"><strong>Claude is the growth story, not the volume story.</strong> 9.2% of web visits, up about 855% year over year, with the lowest bounce rate among the big three. Anthropic’s money is in the API, not the consumer homepage.</p>
+          <p class="take"><strong>Not on this pie:</strong> Meta AI’s 1.2 billion in-app users, Chinese destination apps such as Doubao and Qwen Chat, and almost all Copilot usage inside Microsoft 365.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="capital">
+      <div class="section-head">
+        <div>
+          <h2>What the market thinks they are worth</h2>
+          <p class="sub">Pure labs are shown at last reported private valuation. Public parents are shown at August 2026 market capitalization. These are not the same thing — Alphabet’s $4.3 trillion is Search, YouTube, Cloud, and Android, not just Gemini.</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <article class="panel">
+          <h3>Pure AI labs · last private mark</h3>
+          <p class="hint">Latest primary or widely reported post-money valuation.</p>
+          <div class="bar-row"><div class="lab">Anthropic</div><div class="track"><div class="fill" data-width="100%" style="background:#e08a68"></div></div><div class="val">$965B</div></div>
+          <div class="bar-row"><div class="lab">OpenAI</div><div class="track"><div class="fill" data-width="88%" style="background:#10a37f"></div></div><div class="val">$852B</div></div>
+          <div class="bar-row"><div class="lab">xAI</div><div class="track"><div class="fill" data-width="26%" style="background:#d8d4c8"></div></div><div class="val">$250B</div></div>
+          <div class="bar-row"><div class="lab">DeepSeek</div><div class="track"><div class="fill" data-width="5%" style="background:#6b7cff"></div></div><div class="val">~$45B</div></div>
+          <div class="bar-row"><div class="lab">Perplexity</div><div class="track"><div class="fill" data-width="2%" style="background:#3ec8d6"></div></div><div class="val">$22.6B</div></div>
+          <p class="hint" style="margin:16px 0 0">Anthropic’s May Series H ($65B at $965B) passed OpenAI’s March mark ($122B at $852B). Both have confidentially filed for 2026 IPOs. xAI was absorbed by SpaceX in February at a $250B AI-unit value. DeepSeek’s first external round this spring was reported in the $10–45B range; $45B is the high print.</p>
+        </article>
+        <article class="panel">
+          <h3>Parent companies · Aug 2026 market cap</h3>
+          <p class="hint">Public parents of a frontier model or major assistant.</p>
+          <div class="bar-row"><div class="lab">Alphabet</div><div class="track"><div class="fill" data-width="100%" style="background:#6ea8ff"></div></div><div class="val">$4.3T</div></div>
+          <div class="bar-row"><div class="lab">Microsoft</div><div class="track"><div class="fill" data-width="86%" style="background:#8b97ff"></div></div><div class="val">$3.7T</div></div>
+          <div class="bar-row"><div class="lab">Amazon</div><div class="track"><div class="fill" data-width="70%" style="background:#ffb07a"></div></div><div class="val">$3.0T</div></div>
+          <div class="bar-row"><div class="lab">SpaceX</div><div class="track"><div class="fill" data-width="35%" style="background:#d8d4c8"></div></div><div class="val">~$1.5T</div></div>
+          <div class="bar-row"><div class="lab">Meta</div><div class="track"><div class="fill" data-width="35%" style="background:#5b9dff"></div></div><div class="val">$1.51T</div></div>
+          <p class="hint" style="margin:16px 0 0">SpaceX listed in June (SPCX) after buying xAI. Combined-entity prints since the IPO sit roughly $1.4–2.0T; ~$1.5T is the late-July / early-August cluster. Microsoft has put $13B+ into OpenAI and additional capital into Anthropic. Alphabet, Amazon, Meta, and Microsoft are also spending on the order of $100–200B each in 2026 capex, much of it AI infrastructure.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="users">
+      <div class="section-head">
+        <div>
+          <h2>How many people use them</h2>
+          <p class="sub">Companies do not count users the same way. A ChatGPT monthly user, a Gemini app user, a Grok feature user on X, and a Meta AI tap inside WhatsApp are different acts. Treat these as the latest official or well-sourced figures, not a single census.</p>
+        </div>
+      </div>
+      <div class="user-grid">
+        <article class="user-card">
+          <div class="who">ChatGPT · OpenAI</div>
+          <div class="num">1B+</div>
+          <div class="unit">monthly users · 1B weekly in July</div>
+          <div class="caveat">OpenAI said “more than 1 billion people” on 6 Aug 2026. Sensor Tower had the app at 1B MAU in May.</div>
+        </article>
+        <article class="user-card">
+          <div class="who">Gemini · Google</div>
+          <div class="num">1B</div>
+          <div class="unit">monthly users · app, Aug 2026</div>
+          <div class="caveat">Sundar Pichai this week: a billion people use Gemini every month. 900M+ was the I/O figure in May. Separate from AI Overviews in Search.</div>
+        </article>
+        <article class="user-card">
+          <div class="who">Meta AI · Meta</div>
+          <div class="num">1.2B</div>
+          <div class="unit">MAU across Meta apps · Q1 2026</div>
+          <div class="caveat">Embedded in Facebook, Instagram, WhatsApp. Not a standalone chatbot. First Page Sage puts destination share near 0.1%.</div>
+        </article>
+        <article class="user-card">
+          <div class="who">Copilot · Microsoft</div>
+          <div class="num">~420M</div>
+          <div class="unit">reported users · mid-2026</div>
+          <div class="caveat">Most use is inside Windows, Edge, and Microsoft 365. Standalone web share is only 1.3%.</div>
+        </article>
+        <article class="user-card">
+          <div class="who">Grok · xAI</div>
+          <div class="num">117M</div>
+          <div class="unit">MAU of Grok features · Mar 2026</div>
+          <div class="caveat">SpaceX S-1: 117M of X’s 550M MAU used Grok features. Only ~1.9M paid for advanced models. Latest audited public figure.</div>
+        </article>
+        <article class="user-card">
+          <div class="who">DeepSeek</div>
+          <div class="num">~97–130M</div>
+          <div class="unit">active users · 2026 prints</div>
+          <div class="caveat">~97M global MAU in circulation; ~130M “active” at end-2025, mostly China. 4.1% of worldwide assistant web visits in May.</div>
+        </article>
+        <article class="user-card">
+          <div class="who">Claude · Anthropic</div>
+          <div class="num">56M</div>
+          <div class="unit">global app MAU · Q2 2026</div>
+          <div class="caveat">Sensor Tower / Reuters. Smallest of the Western consumer apps, fastest growth (+640% YoY). Enterprise API is the real business: $47B run-rate in May.</div>
+        </article>
+        <article class="user-card">
+          <div class="who">Perplexity</div>
+          <div class="num">34–45M</div>
+          <div class="unit">MAU · early / mid 2026</div>
+          <div class="caveat">Answer-engine niche. App users outnumber web users. $22.6B valuation, ~$500M annualized revenue.</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="models">
+      <div class="section-head">
+        <div>
+          <h2>Latest flagships</h2>
+          <p class="sub">What each lab is shipping right now — not last winter’s model names. Filter by what you actually need.</p>
+        </div>
+      </div>
+      <div class="filters">
+        <button class="chip on" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="coding" type="button">Coding</button>
+        <button class="chip" data-filter="chat" type="button">Daily chat</button>
+        <button class="chip" data-filter="price" type="button">Price</button>
+        <button class="chip" data-filter="open" type="button">Open weights</button>
+        <button class="chip" data-filter="search" type="button">Search / live</button>
+        <button class="chip" data-filter="enterprise" type="button">Enterprise</button>
+      </div>
+      <div class="cards">
+        <article class="model" data-tags="coding chat enterprise">
+          <div class="brand"><h3>GPT-5.6</h3><span class="lab">OpenAI</span></div>
+          <div class="flag">Sol · Terra · Luna · default in ChatGPT since 9 Jul</div>
+          <p>The volume leader. Sol is the high-compute flagship; Terra is the everyday workhorse; Luna was cut 80% on 30 Jul to $0.20 / $1.20 per million tokens. Best general assistant most people can actually open. Sol leads several hard math and reasoning boards.</p>
+          <div class="meta">
+            <div><span>API price</span><b>$5 / $30 Sol</b></div>
+            <div><span>Context</span><b>1M tokens</b></div>
+            <div><span>Best at</span><b>Daily work, math, reach</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="coding enterprise">
+          <div class="brand"><h3>Claude Opus 5</h3><span class="lab">Anthropic</span></div>
+          <div class="flag">Released 24 Jul · Fable 5 still the long-horizon specialist</div>
+          <p>Current intelligence-index leader (Artificial Analysis v4.1: 61). Took Arena’s coding and agent boards. Same $5 / $25 price as Opus 4.8. Fable 5 / Mythos-class sits beside it for the hardest writing and long jobs. Enterprise revenue now outruns OpenAI’s last reported run-rate.</p>
+          <div class="meta">
+            <div><span>API price</span><b>$5 / $25</b></div>
+            <div><span>Context</span><b>1M tokens · 128K out</b></div>
+            <div><span>Best at</span><b>Coding, agents, writing</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="chat search enterprise">
+          <div class="brand"><h3>Gemini 3.1 Pro</h3><span class="lab">Google DeepMind</span></div>
+          <div class="flag">Plus 3.5 / 3.6 Flash and 3 Deep Think</div>
+          <p>The accuracy and multimodal pick, wired through Search, Android, and Workspace. 3.1 Pro has led GPQA Diamond and cheap ARC-AGI-1 work. Google has been shipping Flash-tier speed this summer rather than a new closed flagship. Gemini Spark is the always-on agent from I/O.</p>
+          <div class="meta">
+            <div><span>API price</span><b>$2 / $12 Pro</b></div>
+            <div><span>Context</span><b>1M tokens</b></div>
+            <div><span>Best at</span><b>Accuracy, multimodal, free reach</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="chat search">
+          <div class="brand"><h3>Grok 4.5</h3><span class="lab">xAI / SpaceX</span></div>
+          <div class="flag">Launched 8 Jul · also Grok Build</div>
+          <p>Real-time X context, fewer content limits, and a 2M-token class window on the prior 4.20 line. AA index around 54 — a step behind Opus 5 and Sol, cheaper than both. Distribution is the X graph: 117M feature users, not a ChatGPT-scale destination app.</p>
+          <div class="meta">
+            <div><span>API price</span><b>~$2 / $6 prior flagship</b></div>
+            <div><span>Context</span><b>Up to 2M on 4.20</b></div>
+            <div><span>Best at</span><b>Live X, unfiltered chat</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="coding price open">
+          <div class="brand"><h3>DeepSeek V4</h3><span class="lab">DeepSeek</span></div>
+          <div class="flag">V4-Pro · V4-Flash 0731 · MIT license</div>
+          <p>The price-performance wrecking ball. Flash 0731 is about $0.14 / $0.28 per million tokens with a mid-tier intelligence score. Pro is a 1.6T MoE (49B active) that sits within a few GPQA points of the Western flagships. Open weights, 1M context, China-heavy users.</p>
+          <div class="meta">
+            <div><span>API price</span><b>$0.14 / $0.28 Flash</b></div>
+            <div><span>Context</span><b>1M tokens</b></div>
+            <div><span>Best at</span><b>Cost, self-hosting</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="open chat">
+          <div class="brand"><h3>Llama 4</h3><span class="lab">Meta</span></div>
+          <div class="flag">Open weights · Meta AI / Muse Spark in-app</div>
+          <p>The default open stack for everyone who will not pay OpenAI or Anthropic. Meta AI is the most-touched assistant on Earth if you count WhatsApp and Instagram taps, and almost invisible as a destination site. Llama remains the ecosystem play, not the LMSYS crown.</p>
+          <div class="meta">
+            <div><span>API price</span><b>Free weights · host it</b></div>
+            <div><span>Distribution</span><b>1.2B in-app MAU</b></div>
+            <div><span>Best at</span><b>Open ecosystem, social reach</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="enterprise chat">
+          <div class="brand"><h3>Copilot</h3><span class="lab">Microsoft</span></div>
+          <div class="flag">Routes GPT-5.6, Claude, and Microsoft’s own MAI models</div>
+          <p>Not a single frontier model so much as the workplace surface. GitHub Copilot now auto-routes by task. Microsoft is also shipping cheaper in-house models to reduce OpenAI dependence. Tiny standalone web share, enormous Office and Windows footprint.</p>
+          <div class="meta">
+            <div><span>Parent</span><b>$3.7T Microsoft</b></div>
+            <div><span>Users</span><b>~420M reported</b></div>
+            <div><span>Best at</span><b>M365, GitHub, Windows</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="search chat">
+          <div class="brand"><h3>Sonar</h3><span class="lab">Perplexity</span></div>
+          <div class="flag">Sonar / Pro / Reasoning · also routes Kimi K2.5</div>
+          <p>The cited-answer engine. Losing consumer web share as ChatGPT and Gemini absorbed search-like answers, still the cleanest product if you want sources first. $22.6B company on roughly half a billion of annualized revenue.</p>
+          <div class="meta">
+            <div><span>Users</span><b>34–45M MAU</b></div>
+            <div><span>Valuation</span><b>$22.6B</b></div>
+            <div><span>Best at</span><b>Cited research answers</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="coding price open">
+          <div class="brand"><h3>Kimi K3</h3><span class="lab">Moonshot</span></div>
+          <div class="flag">AA index 57 · between Sol and Opus 4.8</div>
+          <p>The surprise on the July board. K3 sits ahead of last-gen Western flagships on Artificial Analysis while remaining far cheaper. Evidence that the second tier of Chinese labs is now a frontier participant, not a clone factory.</p>
+          <div class="meta">
+            <div><span>Index</span><b>AA 57</b></div>
+            <div><span>Also</span><b>K2.7 Code line</b></div>
+            <div><span>Best at</span><b>Cheap near-frontier reasoning</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="open price coding">
+          <div class="brand"><h3>Qwen 3.7</h3><span class="lab">Alibaba</span></div>
+          <div class="flag">Plus / Max · China + global open weights</div>
+          <p>Alibaba’s open line remains the other default for self-hosting beside Llama and DeepSeek. Strong coding variants, aggressive price, and a large domestic chat surface that never appears in English-language Similarweb pies.</p>
+          <div class="meta">
+            <div><span>License</span><b>Open weights</b></div>
+            <div><span>Also</span><b>Qwen Chat in China</b></div>
+            <div><span>Best at</span><b>Open multilingual, value</b></div>
+          </div>
+        </article>
+        <article class="model" data-tags="chat enterprise">
+          <div class="brand"><h3>Mistral</h3><span class="lab">Mistral AI</span></div>
+          <div class="flag">Magistral · Medium · Le Chat</div>
+          <p>Europe’s lab. Not winning the intelligence index, still the sovereign and on-prem option for buyers who will not send tokens to US or Chinese hosts. Le Chat is a small slice of the “Other 4.2%” in US chatbot share.</p>
+          <div class="meta">
+            <div><span>Angle</span><b>EU, on-prem, open-ish</b></div>
+            <div><span>Surface</span><b>Le Chat</b></div>
+            <div><span>Best at</span><b>European deployment</b></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="compare">
+      <div class="section-head">
+        <div>
+          <h2>How they compare</h2>
+          <p class="sub">A compressed scorecard. Benchmarks move weekly; the strategic shape of the market has been more stable: OpenAI owns habit, Google owns distribution, Anthropic owns the enterprise token bill, xAI owns the X graph, DeepSeek owns the price floor.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Lab</th>
+              <th>Latest flagship</th>
+              <th>Users</th>
+              <th>Web share</th>
+              <th>Capital</th>
+              <th>Revenue signal</th>
+              <th>Where it wins</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>OpenAI</td>
+              <td>GPT-5.6 Sol / Terra / Luna</td>
+              <td class="mono">1B+ MAU</td>
+              <td class="mono">53.9%</td>
+              <td class="mono">$852B private</td>
+              <td class="mono">~$25B run-rate</td>
+              <td>Default assistant. Math, everyday knowledge work, brand.</td>
+            </tr>
+            <tr>
+              <td>Anthropic</td>
+              <td>Claude Opus 5, Fable 5, Sonnet 5</td>
+              <td class="mono">56M app MAU</td>
+              <td class="mono">9.2%</td>
+              <td class="mono">$965B private</td>
+              <td class="mono">$47B run-rate</td>
+              <td>Coding, agents, writing, API spend. Highest lab valuation.</td>
+            </tr>
+            <tr>
+              <td>Google</td>
+              <td>Gemini 3.1 Pro, 3.5/3.6 Flash</td>
+              <td class="mono">1B MAU</td>
+              <td class="mono">27.9%</td>
+              <td class="mono">$4.3T parent</td>
+              <td class="mono">Inside Alphabet</td>
+              <td>Science accuracy, multimodal, free consumer distribution.</td>
+            </tr>
+            <tr>
+              <td>xAI</td>
+              <td>Grok 4.5, Grok Build</td>
+              <td class="mono">117M feature MAU</td>
+              <td class="mono">2.4%</td>
+              <td class="mono">$250B unit · ~$1.5T parent</td>
+              <td class="mono">~$0.5–3B scale</td>
+              <td>Live X, fewer filters. Still a money-losing compute story.</td>
+            </tr>
+            <tr>
+              <td>DeepSeek</td>
+              <td>V4-Pro, V4-Flash 0731</td>
+              <td class="mono">~100M</td>
+              <td class="mono">4.1%</td>
+              <td class="mono">~$45B</td>
+              <td class="mono">Price leader</td>
+              <td>Open weights near the frontier at a tenth the token price.</td>
+            </tr>
+            <tr>
+              <td>Meta</td>
+              <td>Llama 4, Muse Spark</td>
+              <td class="mono">1.2B in-app</td>
+              <td class="mono">~0.1% solo</td>
+              <td class="mono">$1.51T parent</td>
+              <td class="mono">Inside Meta ads</td>
+              <td>Social distribution and the open-weight default.</td>
+            </tr>
+            <tr>
+              <td>Microsoft</td>
+              <td>Copilot + MAI + routed models</td>
+              <td class="mono">~420M</td>
+              <td class="mono">1.3% web</td>
+              <td class="mono">$3.7T parent</td>
+              <td class="mono">M365 attach</td>
+              <td>Work surface. Can switch models underneath.</td>
+            </tr>
+            <tr>
+              <td>Perplexity</td>
+              <td>Sonar family</td>
+              <td class="mono">34–45M</td>
+              <td class="mono">1.3%</td>
+              <td class="mono">$22.6B</td>
+              <td class="mono">~$500M ARR</td>
+              <td>Cited answers. Losing share to the generalists.</td>
+            </tr>
+            <tr>
+              <td>Moonshot</td>
+              <td>Kimi K3</td>
+              <td class="mono">n/a public</td>
+              <td class="mono">—</td>
+              <td class="mono">Private</td>
+              <td class="mono">—</td>
+              <td>Near-frontier scores without Western flagship prices.</td>
+            </tr>
+            <tr>
+              <td>Alibaba</td>
+              <td>Qwen 3.7</td>
+              <td class="mono">Large in CN</td>
+              <td class="mono">Off this pie</td>
+              <td class="mono">Public parent</td>
+              <td class="mono">Cloud attach</td>
+              <td>Open multilingual models and domestic chat.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="wins" style="margin-top:22px">
+        <article class="win">
+          <h3>If you want one assistant</h3>
+          <div class="pick">GPT-5.6 in ChatGPT</div>
+          <p>Still the product with habit, plugins, and a billion people already there. Capability is no longer a unique advantage; the account is.</p>
+        </article>
+        <article class="win">
+          <h3>If you write software</h3>
+          <div class="pick">Claude Opus 5</div>
+          <p>Coding and agent boards flipped to Anthropic in August. Fable 5 if the job is long and expensive. Sonnet if you are paying the bill.</p>
+        </article>
+        <article class="win">
+          <h3>If tokens are the product</h3>
+          <div class="pick">DeepSeek V4-Flash</div>
+          <p>Frontier-adjacent quality at $0.14 / $0.28. The reason Western labs cut Luna and Terra at the end of July.</p>
+        </article>
+        <article class="win">
+          <h3>If you need it to be free and everywhere</h3>
+          <div class="pick">Gemini</div>
+          <p>A billion app users plus Search and Android. Best science scores among the consumer flagships earlier this summer.</p>
+        </article>
+        <article class="win">
+          <h3>If you live on X</h3>
+          <div class="pick">Grok 4.5</div>
+          <p>Native firehose, fewer refusals, and a parent with rocket-scale capex. Not the intelligence leader; the context leader for that network.</p>
+        </article>
+        <article class="win">
+          <h3>The money plot</h3>
+          <div class="pick">Anthropic $47B vs OpenAI ~$25B</div>
+          <p>Consumer fame and API fortune have decoupled. Claude’s user base is a fraction of ChatGPT’s; its run-rate is not.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="signup">
+      <div class="signup">
+        <div class="kicker">Email list · we will let you know when this updates</div>
+        <h2>Get the next briefing.</h2>
+        <p class="sub">Flagships are turning over every few weeks. Leave an address if you want a reminder when this page is updated. Your email is sent securely to the list owner and used only to send briefing updates.</p>
+        <form class="form" id="signup-form">
+          <input type="text" name="name" placeholder="Name (optional)" maxlength="80" autocomplete="name">
+          <input type="email" name="email" placeholder="Email address" required maxlength="254" autocomplete="email">
+          <button type="submit">Sign up for updates</button>
+        </form>
+        <p class="form-msg" id="form-msg" role="status"></p>
+        <p class="privacy">We only use your address to send Frontier Brief updates. No spam, and you can ask to be removed at any time.</p>
+      </div>
+    </section>
+
+    <section class="section wrap sources">
+      <h2>Sources and caveats</h2>
+      <p>Compiled 13 August 2026 from public reporting. Figures disagree across trackers because they measure different things (web visits vs. app MAU vs. in-feed taps vs. API seats). Where sources conflict, this page prefers company disclosures, then audited filings, then named research firms.</p>
+      <ul>
+        <li>Market share: Similarweb worldwide web visits among seven standalone assistants, May 2026, as published by Momentic (1 Jul 2026) and First Page Sage (updated 3 Aug 2026).</li>
+        <li>Models and boards: OpenAI GPT-5.6 post (9 Jul 2026); Anthropic Opus 5 coverage (24 Jul 2026); Fello AI model brief (updated 7 Aug 2026); DemandSphere / Momentic flagship table (29 Jun 2026); DeepSeek V4 papers and 31 Jul Flash release.</li>
+        <li>Users: OpenAI blog 6 Aug 2026 and Reuters / Sensor Tower 2 Jun 2026 (ChatGPT); Pichai / Verge 12 Aug 2026 (Gemini 1B); Meta Q1 2026 (1.2B Meta AI); SpaceX S-1 / Forbes / TechCrunch May 2026 (Grok 117M); Sensor Tower via Reuters (Claude 56M app MAU, Q2); DeepSeek and Perplexity from Business of Apps, Gradually AI, and related 2026 tallies.</li>
+        <li>Capital: Bloomberg / WSJ 28 May 2026 (Anthropic $965B); March 2026 OpenAI $852B round; xAI $250B in the Feb 2026 SpaceX merger; SpaceX post-IPO ~$1.5T cluster; CompaniesMarketCap / Motley Fool / AlphaSense early August 2026 for Alphabet, Microsoft, Amazon, Meta; DeepSeek $10–45B 2026 external-round reporting.</li>
+        <li>Revenue: Anthropic $47B annualized (May 2026); OpenAI ~$25B earlier in 2026; xAI $3.2B 2025 revenue and $6.4B operating loss (S-1).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div>Frontier Brief · local review copy · not published</div>
+    <div>Server bound to 127.0.0.1:8765</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
