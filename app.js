@@ -116,7 +116,7 @@ function setupSignup() {
   // Serverless signup: the form POSTs directly to FormSubmit, which relays
   // each subscriber to the list owner's inbox. No backend is required, so this
   // works on static hosting such as GitHub Pages.
-  const ENDPOINT = "https://formsubmit.co/ajax/robwhiz22@gmail.com";
+  const ENDPOINT = "https://formsubmit.co/ajax/46db9337bf9d920686ec6de927074fb2";
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
